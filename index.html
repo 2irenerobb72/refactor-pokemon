@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Poke The Pokemon</title>
+    <h1 class="sitetitle">Pokémon Prodder</h1>
+    <script src="jspm_packages/system.js"></script>
+      <script src="config.js"></script>
+      <script>
+        System.import('index.jsx!');
+      </script>
+      <link rel="stylesheet" href="app.css">
+      <link rel="icon" href="/favicon.ico">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  </head>
+  <body>
+    <div class="app">
+      <div class="row">
+        <div class="col-md-4 col-md-offset-4">
+          <form id="new-game">
+            <input type="text" name="name" placeholder="username"></input>
+            <input id="submit" type="submit" value="submit"></input>
+          </form>
+          <p class="siteparagraph">Click me!</p>
+          <div class="counter" id="counter"></div>
+          <div id='image' class="image bulbasaur"></div>
+          <div id="restart">
+            <button class="btn-restart" type="reset">Restart</button>
+          </div>
+          <div class="timer">Game ends in <span id="time"></span> seconds!<div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
